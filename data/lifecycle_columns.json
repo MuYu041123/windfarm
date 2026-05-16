@@ -1,0 +1,344 @@
+[
+  {
+    "field": "plant_code",
+    "title": "plant_code",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 1390,
+    "frozen": true,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "plant_name",
+    "title": "plant_name",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 1383,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "state",
+    "title": "state",
+    "dtype": "string",
+    "width": 70,
+    "nunique": 43,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "county",
+    "title": "county",
+    "dtype": "string",
+    "width": 177,
+    "nunique": 452,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "status",
+    "title": "status",
+    "dtype": "string",
+    "width": 70,
+    "nunique": 5,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "technology",
+    "title": "technology",
+    "dtype": "string",
+    "width": 194,
+    "nunique": 2,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "current_nameplate_mw",
+    "title": "current_nameplate_mw",
+    "dtype": "number",
+    "width": 186,
+    "nunique": 701,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "init_operation_date",
+    "title": "init_operation_date",
+    "dtype": "string",
+    "width": 177,
+    "nunique": 291,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "init_capacity_mw",
+    "title": "init_capacity_mw",
+    "dtype": "string",
+    "width": 288,
+    "nunique": 752,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "init_turbine_count",
+    "title": "init_turbine_count",
+    "dtype": "string",
+    "width": 169,
+    "nunique": 398,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "init_model",
+    "title": "init_model",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 406,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "repower_date",
+    "title": "repower_date",
+    "dtype": "string",
+    "width": 118,
+    "nunique": 31,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "repower_capacity_mw",
+    "title": "repower_capacity_mw",
+    "dtype": "number",
+    "width": 177,
+    "nunique": 95,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "repower_model",
+    "title": "repower_model",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 62,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "repower_turbine_count",
+    "title": "repower_turbine_count",
+    "dtype": "number",
+    "width": 194,
+    "nunique": 61,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "expansion_date",
+    "title": "expansion_date",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 91,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "expansion_capacity_mw",
+    "title": "expansion_capacity_mw",
+    "dtype": "string",
+    "width": 262,
+    "nunique": 96,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "expansion_model",
+    "title": "expansion_model",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 75,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "expansion_turbine_count",
+    "title": "expansion_turbine_count",
+    "dtype": "string",
+    "width": 211,
+    "nunique": 66,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "retire_date",
+    "title": "retire_date",
+    "dtype": "string",
+    "width": 228,
+    "nunique": 55,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "retire_capacity_mw",
+    "title": "retire_capacity_mw",
+    "dtype": "string",
+    "width": 169,
+    "nunique": 116,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "retire_model",
+    "title": "retire_model",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 63,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "retire_turbine_count",
+    "title": "retire_turbine_count",
+    "dtype": "string",
+    "width": 186,
+    "nunique": 79,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "source1",
+    "title": "source1",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 1198,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "source1_type",
+    "title": "source1_type",
+    "dtype": "string",
+    "width": 245,
+    "nunique": 9,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "source2",
+    "title": "source2",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 1300,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "source2_type",
+    "title": "source2_type",
+    "dtype": "string",
+    "width": 245,
+    "nunique": 11,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  }
+]

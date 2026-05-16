@@ -1,0 +1,263 @@
+[
+  {
+    "field": "Plant Code",
+    "title": "Plant Code",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 1390,
+    "frozen": true,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Plant Name",
+    "title": "Plant Name",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 1383,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "State",
+    "title": "State",
+    "dtype": "string",
+    "width": 70,
+    "nunique": 43,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "County",
+    "title": "County",
+    "dtype": "string",
+    "width": 177,
+    "nunique": 452,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Status",
+    "title": "Status",
+    "dtype": "string",
+    "width": 70,
+    "nunique": 5,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Nameplate Capacity (MW)",
+    "title": "Nameplate Capacity (MW)",
+    "dtype": "number",
+    "width": 211,
+    "nunique": 698,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Operating Month",
+    "title": "Operating Month",
+    "dtype": "number",
+    "width": 143,
+    "nunique": 13,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Operating Year",
+    "title": "Operating Year",
+    "dtype": "number",
+    "width": 135,
+    "nunique": 41,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "has_repower",
+    "title": "has_repower",
+    "dtype": "string",
+    "width": 109,
+    "nunique": 2,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "has_expansion",
+    "title": "has_expansion",
+    "dtype": "string",
+    "width": 126,
+    "nunique": 2,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "has_retire",
+    "title": "has_retire",
+    "dtype": "string",
+    "width": 101,
+    "nunique": 2,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "City",
+    "title": "City",
+    "dtype": "string",
+    "width": 186,
+    "nunique": 803,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Zip",
+    "title": "Zip",
+    "dtype": "string",
+    "width": 70,
+    "nunique": 839,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Latitude",
+    "title": "Latitude",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 1334,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Longitude",
+    "title": "Longitude",
+    "dtype": "string",
+    "width": 109,
+    "nunique": 1344,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Balancing Authority Name",
+    "title": "Balancing Authority Name",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 35,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Utility ID",
+    "title": "Utility ID",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 740,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Utility Name",
+    "title": "Utility Name",
+    "dtype": "string",
+    "width": 350,
+    "nunique": 740,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "draft_file",
+    "title": "draft_file",
+    "dtype": "string",
+    "width": 245,
+    "nunique": 19,
+    "frozen": false,
+    "headerFilter": "select",
+    "headerFilterParams": {
+      "values": true,
+      "multiselect": true
+    },
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "draft_sheet",
+    "title": "draft_sheet",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 1390,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  }
+]

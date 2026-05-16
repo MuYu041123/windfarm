@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Wind Farm Lifecycle Explorer</title>
+
+  <!-- Leaflet CSS (vendored) -->
+  <link rel="stylesheet" href="lib/leaflet.css" />
+  <!-- MarkerCluster CSS -->
+  <link rel="stylesheet" href="lib/MarkerCluster.css" />
+  <link rel="stylesheet" href="lib/MarkerCluster.Default.css" />
+  <!-- Tabulator CSS -->
+  <link rel="stylesheet" href="lib/tabulator.min.css" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Loading overlay */
+    #loading-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(255,255,255,0.9);
+      z-index: 9999;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 16px;
+      color: #2c3e50;
+    }
+    #loading-overlay.visible { display: flex; }
+    #loading-spinner {
+      width: 40px; height: 40px;
+      border: 3px solid #dce1e6;
+      border-top-color: #2980b9;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 12px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+<div id="loading-overlay" class="visible">
+  <div id="loading-spinner"></div>
+  <div>Loading Wind Farm Database...</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- APP CONTAINER -->
+<!-- ============================================================ -->
+<div id="app-container">
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="logo"><span class="logo-icon">&#x1f32c;</span>US Wind Farm Lifecycle Explorer</div>
+    <div id="stats-bar"></div>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search plant name or code..." autocomplete="off">
+      <button id="search-clear" title="Clear">×</button>
+      <div id="search-results"></div>
+    </div>
+  </header>
+
+  <!-- TAB BAR -->
+  <nav id="tab-bar">
+    <button class="tab-btn active" data-tab="map">&#x1f5fa; Map View</button>
+    <button class="tab-btn" data-tab="table">&#x1f4ca; Data Table</button>
+    <div id="filter-chips">
+      <span style="font-size:11px;color:#7f8c8d;margin-right:4px;">Filter:</span>
+      <span class="filter-chip active" data-filter="operating">Operating <span class="count" id="count-operating">0</span></span>
+      <span class="filter-chip active" data-filter="repower">Repower <span class="count" id="count-repower">0</span></span>
+      <span class="filter-chip active" data-filter="expansion">Expansion <span class="count" id="count-expansion">0</span></span>
+      <span class="filter-chip active" data-filter="has_retire">Has Retirement <span class="count" id="count-hasretire">0</span></span>
+      <span class="filter-chip active" data-filter="retired">Fully Retired <span class="count" id="count-retired">0</span></span>
+    </div>
+  </nav>
+
+  <!-- TAB CONTENT -->
+  <div id="tab-content">
+
+    <!-- MAP PANEL -->
+    <div id="tab-map" class="tab-panel active">
+      <!-- Map -->
+      <div id="map-container"></div>
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div id="sidebar-header">
+          <span>Plant List (<span id="sidebar-count">0</span>)</span>
+        </div>
+        <div id="plant-list"></div>
+      </aside>
+
+    </div>
+
+    <!-- TABLE PANEL -->
+    <div id="tab-table" class="tab-panel">
+      <!-- Sub-tabs -->
+      <div id="sub-tab-bar">
+        <button class="sub-tab-btn active" data-table="summary">Summary</button>
+        <button class="sub-tab-btn" data-table="lifecycle">Lifecycle</button>
+        <button class="sub-tab-btn" data-table="allwindplant">AllWindPlant</button>
+      </div>
+
+      <!-- Summary Table -->
+      <div id="table-summary" class="table-panel" style="display:flex;">
+        <div id="loading-summary" class="table-loading">
+          <div id="loading-spinner"></div> Loading Summary data...
+        </div>
+        <div id="tabulator-summary" class="tabulator-host"></div>
+        <div id="count-summary" class="row-count"></div>
+      </div>
+
+      <!-- Lifecycle Table -->
+      <div id="table-lifecycle" class="table-panel" style="display:none;">
+        <div id="loading-lifecycle" class="table-loading">
+          <div id="loading-spinner"></div> Loading Lifecycle data...
+        </div>
+        <div id="tabulator-lifecycle" class="tabulator-host"></div>
+        <div id="count-lifecycle" class="row-count"></div>
+      </div>
+
+      <!-- AllWindPlant Table -->
+      <div id="table-allwindplant" class="table-panel" style="display:none;">
+        <div id="loading-allwindplant" class="table-loading">
+          <div id="loading-spinner"></div> Loading AllWindPlant data (17,462 rows × 316 cols)...
+        </div>
+        <div id="tabulator-allwindplant" class="tabulator-host"></div>
+        <div id="count-allwindplant" class="row-count"></div>
+      </div>
+    </div>
+
+  </div><!-- /tab-content -->
+
+  <!-- DRAFT FULL-PAGE VIEW -->
+  <div id="draft-fullpage" class="tab-panel">
+    <div id="draft-fullpage-header">
+      <button id="draft-back-btn">← Back to Map</button>
+      <h3 id="draft-fullpage-title">Draft Sheet</h3>
+      <span></span>
+    </div>
+    <div id="draft-fullpage-loading" style="display:flex;justify-content:center;align-items:center;flex:1;font-size:14px;color:#7f8c8d;">
+      Loading draft sheet...
+    </div>
+    <div id="draft-fullpage-table" style="flex:1;overflow:hidden;"></div>
+  </div>
+
+</div><!-- /app-container -->
+
+<!-- ============================================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================================ -->
+<!-- Leaflet (vendored) -->
+<script src="lib/leaflet.js"></script>
+<!-- MarkerCluster -->
+<script src="lib/leaflet.markercluster.js"></script>
+<!-- Tabulator -->
+<script src="lib/tabulator.min.js"></script>
+<!-- App modules (order matters) -->
+<script src="js/utils.js"></script>
+<script src="js/search.js"></script>
+<script src="js/table.js"></script>
+<script src="js/draft-viewer.js"></script>
+<script src="js/map.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
