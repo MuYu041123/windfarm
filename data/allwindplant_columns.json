@@ -28,7 +28,7 @@
     "title": "Utility ID",
     "dtype": "number",
     "width": 118,
-    "nunique": 737,
+    "nunique": 740,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -40,7 +40,7 @@
     "title": "Utility Name",
     "dtype": "string",
     "width": 350,
-    "nunique": 737,
+    "nunique": 740,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -52,7 +52,7 @@
     "title": "Plant Name",
     "dtype": "string",
     "width": 350,
-    "nunique": 1380,
+    "nunique": 1386,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -79,7 +79,7 @@
     "title": "County",
     "dtype": "string",
     "width": 177,
-    "nunique": 450,
+    "nunique": 453,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -117,11 +117,11 @@
     "headerSort": true
   },
   {
-    "field": "当期总容量 Nameplate Capacity (MW)",
-    "title": "当期总容量 Nameplate Capacity (MW)",
+    "field": "当期总容量\nNameplate Capacity (MW)",
+    "title": "当期总容量\nNameplate Capacity (MW)",
     "dtype": "number",
     "width": 262,
-    "nunique": 787,
+    "nunique": 788,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -129,8 +129,8 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Operating Month",
-    "title": "首次运营 Operating Month",
+    "field": "首次运营\nOperating Month",
+    "title": "首次运营\nOperating Month",
     "dtype": "number",
     "width": 186,
     "nunique": 13,
@@ -141,8 +141,8 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Operating Year",
-    "title": "首次运营 Operating Year",
+    "field": "首次运营\nOperating Year",
+    "title": "首次运营\nOperating Year",
     "dtype": "number",
     "width": 177,
     "nunique": 41,
@@ -153,11 +153,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 Operation1 (MW)",
-    "title": "当期服役 Operation1 (MW)",
+    "field": "当期服役\nOperation1\n(MW)",
+    "title": "当期服役\nOperation1\n(MW)",
     "dtype": "number",
     "width": 186,
-    "nunique": 612,
+    "nunique": 613,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -165,8 +165,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 Operation2 (MW)",
-    "title": "当期服役 Operation2 (MW)",
+    "field": "当期服役\nOperation2\n(MW)",
+    "title": "当期服役\nOperation2\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 204,
@@ -177,8 +177,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 Operation3 (MW)",
-    "title": "当期服役 Operation3 (MW)",
+    "field": "当期服役\nOperation3\n(MW)",
+    "title": "当期服役\nOperation3\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 34,
@@ -189,8 +189,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 Operation4 (MW)",
-    "title": "当期服役 Operation4 (MW)",
+    "field": "当期服役\nOperation4\n(MW)",
+    "title": "当期服役\nOperation4\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 7,
@@ -201,8 +201,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 Operation5 (MW)",
-    "title": "当期服役 Operation5 (MW)",
+    "field": "当期服役\nOperation5\n(MW)",
+    "title": "当期服役\nOperation5\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 6,
@@ -237,8 +237,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 expansion1 (MW)",
-    "title": "当期服役 expansion1 (MW)",
+    "field": "当期服役\nexpansion1\n(MW)",
+    "title": "当期服役\nexpansion1\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 93,
@@ -253,7 +253,7 @@
     "title": "Repower1 month",
     "dtype": "number",
     "width": 135,
-    "nunique": 9,
+    "nunique": 10,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -265,7 +265,7 @@
     "title": "Repower1 year",
     "dtype": "number",
     "width": 126,
-    "nunique": 14,
+    "nunique": 15,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -273,8 +273,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 repower1 (MW)",
-    "title": "当期服役 repower1 (MW)",
+    "field": "当期服役\nrepower1\n(MW)",
+    "title": "当期服役\nrepower1\n(MW)",
     "dtype": "number",
     "width": 169,
     "nunique": 96,
@@ -285,10 +285,10 @@
     "headerSort": true
   },
   {
-    "field": "Retirement1 Month",
-    "title": "Retirement1 Month",
+    "field": "Retirement1 Month ",
+    "title": "Retirement1 Month ",
     "dtype": "number",
-    "width": 160,
+    "width": 169,
     "nunique": 13,
     "frozen": false,
     "headerFilter": "number",
@@ -297,10 +297,10 @@
     "headerSort": true
   },
   {
-    "field": "Retirement1 Year",
-    "title": "Retirement1 Year",
+    "field": "Retirement1 Year ",
+    "title": "Retirement1 Year ",
     "dtype": "number",
-    "width": 152,
+    "width": 160,
     "nunique": 20,
     "frozen": false,
     "headerFilter": "number",
@@ -309,11 +309,11 @@
     "headerSort": true
   },
   {
-    "field": "当期退役 retire1 (MW)",
-    "title": "当期退役 retire1 (MW)",
+    "field": "当期退役\nretire1\n(MW)",
+    "title": "当期退役\nretire1\n(MW)",
     "dtype": "number",
     "width": 160,
-    "nunique": 118,
+    "nunique": 119,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -345,8 +345,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 expansion2 (MW)",
-    "title": "当期服役 expansion2 (MW)",
+    "field": "当期服役\nexpansion2\n(MW)",
+    "title": "当期服役\nexpansion2\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 30,
@@ -381,8 +381,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 repower2 (MW)",
-    "title": "当期服役 repower2 (MW)",
+    "field": "当期服役\nrepower2\n(MW)",
+    "title": "当期服役\nrepower2\n(MW)",
     "dtype": "number",
     "width": 169,
     "nunique": 23,
@@ -393,10 +393,10 @@
     "headerSort": true
   },
   {
-    "field": "Retirement2 Month",
-    "title": "Retirement2 Month",
+    "field": "Retirement2 Month ",
+    "title": "Retirement2 Month ",
     "dtype": "number",
-    "width": 160,
+    "width": 169,
     "nunique": 2,
     "frozen": false,
     "headerFilter": "number",
@@ -405,10 +405,10 @@
     "headerSort": true
   },
   {
-    "field": "Retirement2 Year",
-    "title": "Retirement2 Year",
+    "field": "Retirement2 Year ",
+    "title": "Retirement2 Year ",
     "dtype": "number",
-    "width": 152,
+    "width": 160,
     "nunique": 5,
     "frozen": false,
     "headerFilter": "number",
@@ -417,8 +417,8 @@
     "headerSort": true
   },
   {
-    "field": "当期退役 retire2 (MW)",
-    "title": "当期退役 retire2 (MW)",
+    "field": "当期退役\nretire2\n(MW)",
+    "title": "当期退役\nretire2\n(MW)",
     "dtype": "number",
     "width": 160,
     "nunique": 7,
@@ -453,8 +453,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 expansion3 (MW)",
-    "title": "当期服役 expansion3 (MW)",
+    "field": "当期服役\nexpansion3\n(MW)",
+    "title": "当期服役\nexpansion3\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 10,
@@ -477,8 +477,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 repower3 (MW)",
-    "title": "当期服役 repower3 (MW)",
+    "field": "当期服役\nrepower3\n(MW)",
+    "title": "当期服役\nrepower3\n(MW)",
     "dtype": "number",
     "width": 169,
     "nunique": 6,
@@ -489,10 +489,10 @@
     "headerSort": true
   },
   {
-    "field": "Retirement3 Month",
-    "title": "Retirement3 Month",
+    "field": "Retirement3 Month ",
+    "title": "Retirement3 Month ",
     "dtype": "number",
-    "width": 160,
+    "width": 169,
     "nunique": 1,
     "frozen": false,
     "headerFilter": "number",
@@ -501,10 +501,10 @@
     "headerSort": true
   },
   {
-    "field": "Retirement3 Year",
-    "title": "Retirement3 Year",
+    "field": "Retirement3 Year ",
+    "title": "Retirement3 Year ",
     "dtype": "number",
-    "width": 152,
+    "width": 160,
     "nunique": 2,
     "frozen": false,
     "headerFilter": "number",
@@ -513,8 +513,8 @@
     "headerSort": true
   },
   {
-    "field": "当期退役 retire3 (MW)",
-    "title": "当期退役 retire3 (MW)",
+    "field": "当期退役\nretire3\n(MW)",
+    "title": "当期退役\nretire3\n(MW)",
     "dtype": "number",
     "width": 160,
     "nunique": 3,
@@ -549,8 +549,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 expansion4 (MW)",
-    "title": "当期服役 expansion4 (MW)",
+    "field": "当期服役\nexpansion4\n(MW)",
+    "title": "当期服役\nexpansion4\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 5,
@@ -573,8 +573,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 repower4 (MW)",
-    "title": "当期服役 repower4 (MW)",
+    "field": "当期服役\nrepower4\n(MW)",
+    "title": "当期服役\nrepower4\n(MW)",
     "dtype": "number",
     "width": 169,
     "nunique": 3,
@@ -585,8 +585,20 @@
     "headerSort": true
   },
   {
-    "field": "Retirement4 Month",
-    "title": "Retirement4 Month",
+    "field": "Retirement4 Month ",
+    "title": "Retirement4 Month ",
+    "dtype": "number",
+    "width": 169,
+    "nunique": 1,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Retirement4 Year ",
+    "title": "Retirement4 Year ",
     "dtype": "number",
     "width": 160,
     "nunique": 1,
@@ -597,20 +609,8 @@
     "headerSort": true
   },
   {
-    "field": "Retirement4 Year",
-    "title": "Retirement4 Year",
-    "dtype": "number",
-    "width": 152,
-    "nunique": 1,
-    "frozen": false,
-    "headerFilter": "number",
-    "headerFilterParams": {},
-    "visible": true,
-    "headerSort": true
-  },
-  {
-    "field": "当期退役 retire4 (MW)",
-    "title": "当期退役 retire4 (MW)",
+    "field": "当期退役\nretire4\n(MW)",
+    "title": "当期退役\nretire4\n(MW)",
     "dtype": "number",
     "width": 160,
     "nunique": 2,
@@ -645,8 +645,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 expansion5 (MW)",
-    "title": "当期服役 expansion5 (MW)",
+    "field": "当期服役\nexpansion5\n(MW)",
+    "title": "当期服役\nexpansion5\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 3,
@@ -669,8 +669,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 repower5 (MW)",
-    "title": "当期服役 repower5 (MW)",
+    "field": "当期服役\nrepower5\n(MW)",
+    "title": "当期服役\nrepower5\n(MW)",
     "dtype": "number",
     "width": 169,
     "nunique": 2,
@@ -705,8 +705,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 expansion6 (MW)",
-    "title": "当期服役 expansion6 (MW)",
+    "field": "当期服役\nexpansion6\n(MW)",
+    "title": "当期服役\nexpansion6\n(MW)",
     "dtype": "number",
     "width": 186,
     "nunique": 2,
@@ -717,11 +717,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen January",
-    "title": "Netgen January",
+    "field": "Netgen\nJanuary",
+    "title": "Netgen\nJanuary",
     "dtype": "string",
     "width": 135,
-    "nunique": 14778,
+    "nunique": 14847,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -729,11 +729,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen February",
-    "title": "Netgen February",
+    "field": "Netgen\nFebruary",
+    "title": "Netgen\nFebruary",
     "dtype": "string",
     "width": 143,
-    "nunique": 14864,
+    "nunique": 14940,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -741,11 +741,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen March",
-    "title": "Netgen March",
+    "field": "Netgen\nMarch",
+    "title": "Netgen\nMarch",
     "dtype": "string",
     "width": 118,
-    "nunique": 14934,
+    "nunique": 15010,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -753,10 +753,58 @@
     "headerSort": true
   },
   {
-    "field": "Netgen April",
-    "title": "Netgen April",
+    "field": "Netgen\nApril",
+    "title": "Netgen\nApril",
     "dtype": "string",
     "width": 118,
+    "nunique": 15149,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Netgen\nMay",
+    "title": "Netgen\nMay",
+    "dtype": "string",
+    "width": 101,
+    "nunique": 15110,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Netgen\nJune",
+    "title": "Netgen\nJune",
+    "dtype": "string",
+    "width": 109,
+    "nunique": 15131,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Netgen\nJuly",
+    "title": "Netgen\nJuly",
+    "dtype": "string",
+    "width": 109,
+    "nunique": 15038,
+    "frozen": false,
+    "headerFilter": "input",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "Netgen\nAugust",
+    "title": "Netgen\nAugust",
+    "dtype": "string",
+    "width": 126,
     "nunique": 15073,
     "frozen": false,
     "headerFilter": "input",
@@ -765,59 +813,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen May",
-    "title": "Netgen May",
-    "dtype": "string",
-    "width": 101,
-    "nunique": 15039,
-    "frozen": false,
-    "headerFilter": "input",
-    "headerFilterParams": {},
-    "visible": true,
-    "headerSort": true
-  },
-  {
-    "field": "Netgen June",
-    "title": "Netgen June",
-    "dtype": "string",
-    "width": 109,
-    "nunique": 15056,
-    "frozen": false,
-    "headerFilter": "input",
-    "headerFilterParams": {},
-    "visible": true,
-    "headerSort": true
-  },
-  {
-    "field": "Netgen July",
-    "title": "Netgen July",
-    "dtype": "string",
-    "width": 109,
-    "nunique": 14965,
-    "frozen": false,
-    "headerFilter": "input",
-    "headerFilterParams": {},
-    "visible": true,
-    "headerSort": true
-  },
-  {
-    "field": "Netgen August",
-    "title": "Netgen August",
-    "dtype": "string",
-    "width": 126,
-    "nunique": 15001,
-    "frozen": false,
-    "headerFilter": "input",
-    "headerFilterParams": {},
-    "visible": true,
-    "headerSort": true
-  },
-  {
-    "field": "Netgen September",
-    "title": "Netgen September",
+    "field": "Netgen\nSeptember",
+    "title": "Netgen\nSeptember",
     "dtype": "string",
     "width": 152,
-    "nunique": 15041,
+    "nunique": 15120,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -825,11 +825,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen October",
-    "title": "Netgen October",
+    "field": "Netgen\nOctober",
+    "title": "Netgen\nOctober",
     "dtype": "string",
     "width": 135,
-    "nunique": 15259,
+    "nunique": 15335,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -837,11 +837,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen November",
-    "title": "Netgen November",
+    "field": "Netgen\nNovember",
+    "title": "Netgen\nNovember",
     "dtype": "string",
     "width": 143,
-    "nunique": 15402,
+    "nunique": 15479,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -849,11 +849,11 @@
     "headerSort": true
   },
   {
-    "field": "Netgen December",
-    "title": "Netgen December",
+    "field": "Netgen\nDecember",
+    "title": "Netgen\nDecember",
     "dtype": "string",
     "width": 143,
-    "nunique": 15698,
+    "nunique": 15776,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -861,11 +861,11 @@
     "headerSort": true
   },
   {
-    "field": "Total Net Generation (Megawatthours)",
-    "title": "Total Net Generation (Megawatthours)",
+    "field": "Total Net Generation\n(Megawatthours)",
+    "title": "Total Net Generation\n(Megawatthours)",
     "dtype": "number",
     "width": 322,
-    "nunique": 15774,
+    "nunique": 15852,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -877,7 +877,7 @@
     "title": "City",
     "dtype": "string",
     "width": 186,
-    "nunique": 801,
+    "nunique": 803,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -889,7 +889,7 @@
     "title": "Zip",
     "dtype": "string",
     "width": 70,
-    "nunique": 860,
+    "nunique": 842,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -901,7 +901,7 @@
     "title": "Latitude",
     "dtype": "number",
     "width": 118,
-    "nunique": 1354,
+    "nunique": 1337,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -913,7 +913,7 @@
     "title": "Longitude",
     "dtype": "string",
     "width": 109,
-    "nunique": 1364,
+    "nunique": 1347,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -936,11 +936,11 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Capacity (MW)",
-    "title": "首次运营 Capacity (MW)",
+    "field": "首次运营\nCapacity (MW)",
+    "title": "首次运营\nCapacity (MW)",
     "dtype": "string",
     "width": 169,
-    "nunique": 691,
+    "nunique": 692,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -948,11 +948,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役1 (MW)",
-    "title": "当期服役1 (MW)",
+    "field": "当期服役1\n(MW)",
+    "title": "当期服役1\n(MW)",
     "dtype": "string",
     "width": 101,
-    "nunique": 614,
+    "nunique": 615,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -960,8 +960,8 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Number of Turbines 1",
-    "title": "首次运营 Number of Turbines 1",
+    "field": "首次运营\nNumber of Turbines 1",
+    "title": "首次运营\nNumber of Turbines 1",
     "dtype": "number",
     "width": 228,
     "nunique": 177,
@@ -976,7 +976,7 @@
     "title": "Predominant Turbine Manufacturer 1",
     "dtype": "string",
     "width": 305,
-    "nunique": 47,
+    "nunique": 48,
     "frozen": false,
     "headerFilter": "select",
     "headerFilterParams": {
@@ -991,7 +991,7 @@
     "title": "Predominant Turbine Model Number 1",
     "dtype": "string",
     "width": 305,
-    "nunique": 262,
+    "nunique": 265,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -1015,7 +1015,7 @@
     "title": "Turbine Hub Height (Feet) 1",
     "dtype": "string",
     "width": 245,
-    "nunique": 185,
+    "nunique": 187,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -1023,8 +1023,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役2 (MW)",
-    "title": "当期服役2 (MW)",
+    "field": "当期服役2\n(MW)",
+    "title": "当期服役2\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 204,
@@ -1035,10 +1035,10 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Number of Turbines 2",
-    "title": "首次运营 Number of Turbines 2",
+    "field": "Number of Turbines 2",
+    "title": "Number of Turbines 2",
     "dtype": "number",
-    "width": 228,
+    "width": 186,
     "nunique": 91,
     "frozen": false,
     "headerFilter": "number",
@@ -1098,8 +1098,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役3 (MW)",
-    "title": "当期服役3 (MW)",
+    "field": "当期服役3\n(MW)",
+    "title": "当期服役3\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 34,
@@ -1110,8 +1110,8 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Number of Turbines 3",
-    "title": "首次运营 Number of Turbines 3",
+    "field": "首次运营\nNumber of Turbines 3",
+    "title": "首次运营\nNumber of Turbines 3",
     "dtype": "number",
     "width": 228,
     "nunique": 30,
@@ -1176,8 +1176,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役4 (MW)",
-    "title": "当期服役4 (MW)",
+    "field": "当期服役4\n(MW)",
+    "title": "当期服役4\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 7,
@@ -1188,8 +1188,8 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Number of Turbines 4",
-    "title": "首次运营 Number of Turbines 4",
+    "field": "首次运营\nNumber of Turbines 4",
+    "title": "首次运营\nNumber of Turbines 4",
     "dtype": "number",
     "width": 228,
     "nunique": 7,
@@ -1254,8 +1254,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役5 (MW)",
-    "title": "当期服役5 (MW)",
+    "field": "当期服役5\n(MW)",
+    "title": "当期服役5\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 6,
@@ -1266,8 +1266,8 @@
     "headerSort": true
   },
   {
-    "field": "首次运营 Number of Turbines 5",
-    "title": "首次运营 Number of Turbines 5",
+    "field": "首次运营\nNumber of Turbines 5",
+    "title": "首次运营\nNumber of Turbines 5",
     "dtype": "number",
     "width": 228,
     "nunique": 6,
@@ -1344,8 +1344,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役e1 (MW)",
-    "title": "当期服役e1 (MW)",
+    "field": "当期服役e1\n(MW)",
+    "title": "当期服役e1\n(MW)",
     "dtype": "string",
     "width": 109,
     "nunique": 95,
@@ -1434,8 +1434,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役e2 (MW)",
-    "title": "当期服役e2 (MW)",
+    "field": "当期服役e2\n(MW)",
+    "title": "当期服役e2\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 30,
@@ -1524,8 +1524,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役e3 (MW)",
-    "title": "当期服役e3 (MW)",
+    "field": "当期服役e3\n(MW)",
+    "title": "当期服役e3\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 10,
@@ -1614,8 +1614,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役e4 (MW)",
-    "title": "当期服役e4 (MW)",
+    "field": "当期服役e4\n(MW)",
+    "title": "当期服役e4\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 5,
@@ -1704,8 +1704,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役e5 (MW)",
-    "title": "当期服役e5 (MW)",
+    "field": "当期服役e5\n(MW)",
+    "title": "当期服役e5\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 3,
@@ -1794,8 +1794,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役e6 (MW)",
-    "title": "当期服役e6 (MW)",
+    "field": "当期服役e6\n(MW)",
+    "title": "当期服役e6\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 2,
@@ -1884,13 +1884,13 @@
     "headerSort": true
   },
   {
-    "field": "当期服役r1 (MW)",
-    "title": "当期服役r1 (MW)",
-    "dtype": "string",
-    "width": 109,
-    "nunique": 100,
+    "field": "当期服役r1\n(MW)",
+    "title": "当期服役r1\n(MW)",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 117,
     "frozen": false,
-    "headerFilter": "input",
+    "headerFilter": "number",
     "headerFilterParams": {},
     "visible": true,
     "headerSort": true
@@ -1912,7 +1912,7 @@
     "title": "Predominant Turbine Manufacturer_repower 1",
     "dtype": "string",
     "width": 350,
-    "nunique": 11,
+    "nunique": 12,
     "frozen": false,
     "headerFilter": "select",
     "headerFilterParams": {
@@ -1927,7 +1927,7 @@
     "title": "Predominant Turbine Model Number_repower 1",
     "dtype": "string",
     "width": 350,
-    "nunique": 60,
+    "nunique": 61,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -1939,7 +1939,7 @@
     "title": "Design Wind Speed (mph)_repower 1",
     "dtype": "string",
     "width": 296,
-    "nunique": 18,
+    "nunique": 19,
     "frozen": false,
     "headerFilter": "select",
     "headerFilterParams": {
@@ -1954,7 +1954,7 @@
     "title": "Turbine Hub Height (Feet)_repower 1",
     "dtype": "number",
     "width": 313,
-    "nunique": 28,
+    "nunique": 29,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -1974,11 +1974,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役r2 (MW)",
-    "title": "当期服役r2 (MW)",
+    "field": "当期服役r2\n(MW)",
+    "title": "当期服役r2\n(MW)",
     "dtype": "number",
     "width": 118,
-    "nunique": 30,
+    "nunique": 33,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2064,8 +2064,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役r3 (MW)",
-    "title": "当期服役r3 (MW)",
+    "field": "当期退役r3\n(MW)",
+    "title": "当期退役r3\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 8,
@@ -2154,8 +2154,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役r4 (MW)",
-    "title": "当期服役r4 (MW)",
+    "field": "当期退役r4\n(MW)",
+    "title": "当期退役r4\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 4,
@@ -2232,8 +2232,8 @@
     "headerSort": true
   },
   {
-    "field": "当期服役r5 (MW)",
-    "title": "当期服役r5 (MW)",
+    "field": "当期服役r5\n(MW)",
+    "title": "当期服役r5\n(MW)",
     "dtype": "number",
     "width": 118,
     "nunique": 2,
@@ -2302,7 +2302,7 @@
     "title": "Retirement1 Capacity (MW)",
     "dtype": "number",
     "width": 228,
-    "nunique": 116,
+    "nunique": 117,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2310,11 +2310,11 @@
     "headerSort": true
   },
   {
-    "field": "当期退役r1 (MW)",
-    "title": "当期退役r1 (MW)",
+    "field": "当期退役r1\n(MW)",
+    "title": "当期退役r1\n(MW)",
     "dtype": "number",
     "width": 118,
-    "nunique": 117,
+    "nunique": 119,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2338,7 +2338,7 @@
     "title": "Predominant Turbine Manufacturer_retire 1",
     "dtype": "string",
     "width": 350,
-    "nunique": 28,
+    "nunique": 29,
     "frozen": false,
     "headerFilter": "select",
     "headerFilterParams": {
@@ -2353,7 +2353,7 @@
     "title": "Predominant Turbine Model Number_retire 1",
     "dtype": "string",
     "width": 350,
-    "nunique": 61,
+    "nunique": 62,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -2373,11 +2373,11 @@
     "headerSort": true
   },
   {
-    "field": "当期退役r2 (MW)",
-    "title": "当期退役r2 (MW)",
+    "field": "当期退役r2\n(MW)",
+    "title": "当期退役r2\n(MW)",
     "dtype": "number",
     "width": 118,
-    "nunique": 15,
+    "nunique": 33,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2439,11 +2439,11 @@
     "headerSort": true
   },
   {
-    "field": "当期退役r3 (MW)",
-    "title": "当期退役r3 (MW)",
+    "field": "当期退役r3\n(MW).1",
+    "title": "当期退役r3\n(MW).1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 3,
+    "width": 126,
+    "nunique": 8,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2505,11 +2505,11 @@
     "headerSort": true
   },
   {
-    "field": "当期退役r4 (MW)",
-    "title": "当期退役r4 (MW)",
+    "field": "当期退役r4\n(MW).1",
+    "title": "当期退役r4\n(MW).1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 2,
+    "width": 126,
+    "nunique": 4,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2559,23 +2559,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 p_cap 1",
-    "title": "当期服役 p_cap 1",
-    "dtype": "string",
-    "width": 118,
-    "nunique": 611,
-    "frozen": false,
-    "headerFilter": "input",
-    "headerFilterParams": {},
-    "visible": true,
-    "headerSort": true
-  },
-  {
-    "field": "当期服役 p_cap 2",
-    "title": "当期服役 p_cap 2",
+    "field": "当期服役\np_cap 1",
+    "title": "当期服役\np_cap 1",
     "dtype": "number",
     "width": 118,
-    "nunique": 345,
+    "nunique": 612,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2583,11 +2571,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 p_cap 3",
-    "title": "当期服役 p_cap 3",
+    "field": "当期服役\np_cap 2",
+    "title": "当期服役\np_cap 2",
     "dtype": "number",
     "width": 118,
-    "nunique": 91,
+    "nunique": 347,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2595,11 +2583,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 p_cap 4",
-    "title": "当期服役 p_cap 4",
+    "field": "当期服役\np_cap 3",
+    "title": "当期服役\np_cap 3",
     "dtype": "number",
     "width": 118,
-    "nunique": 30,
+    "nunique": 93,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2607,11 +2595,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 p_cap 5",
-    "title": "当期服役 p_cap 5",
+    "field": "当期服役\np_cap 4",
+    "title": "当期服役\np_cap 4",
     "dtype": "number",
     "width": 118,
-    "nunique": 25,
+    "nunique": 29,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2619,11 +2607,11 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 p_cap 6",
-    "title": "当期服役 p_cap 6",
+    "field": "当期服役\np_cap 5",
+    "title": "当期服役\np_cap 5",
     "dtype": "number",
     "width": 118,
-    "nunique": 7,
+    "nunique": 17,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2631,8 +2619,20 @@
     "headerSort": true
   },
   {
-    "field": "当期服役 p_cap 7",
-    "title": "当期服役 p_cap 7",
+    "field": "当期服役\np_cap 6",
+    "title": "当期服役\np_cap 6",
+    "dtype": "number",
+    "width": 118,
+    "nunique": 8,
+    "frozen": false,
+    "headerFilter": "number",
+    "headerFilterParams": {},
+    "visible": true,
+    "headerSort": true
+  },
+  {
+    "field": "当期服役\np_cap 7",
+    "title": "当期服役\np_cap 7",
     "dtype": "number",
     "width": 118,
     "nunique": 4,
@@ -2667,11 +2667,11 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 1",
-    "title": "p_cap 1",
+    "field": "当期服役\np_cap 1.1",
+    "title": "当期服役\np_cap 1.1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 590,
+    "width": 135,
+    "nunique": 612,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2683,7 +2683,7 @@
     "title": "t_manu 1",
     "dtype": "string",
     "width": 350,
-    "nunique": 41,
+    "nunique": 42,
     "frozen": false,
     "headerFilter": "select",
     "headerFilterParams": {
@@ -2698,7 +2698,7 @@
     "title": "t_model 1",
     "dtype": "string",
     "width": 135,
-    "nunique": 233,
+    "nunique": 235,
     "frozen": false,
     "headerFilter": "input",
     "headerFilterParams": {},
@@ -2710,7 +2710,7 @@
     "title": "t_cap 1",
     "dtype": "number",
     "width": 118,
-    "nunique": 87,
+    "nunique": 88,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2722,7 +2722,7 @@
     "title": "t_hh 1",
     "dtype": "number",
     "width": 118,
-    "nunique": 69,
+    "nunique": 70,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2734,7 +2734,7 @@
     "title": "t_rd 1",
     "dtype": "number",
     "width": 118,
-    "nunique": 79,
+    "nunique": 80,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2766,11 +2766,11 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 2",
-    "title": "p_cap 2",
+    "field": "当期服役\np_cap 2.1",
+    "title": "当期服役\np_cap 2.1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 327,
+    "width": 135,
+    "nunique": 347,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2865,11 +2865,11 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 3",
-    "title": "p_cap 3",
+    "field": "当期服役\np_cap 3.1",
+    "title": "当期服役\np_cap 3.1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 87,
+    "width": 135,
+    "nunique": 93,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -2964,11 +2964,11 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 4",
-    "title": "p_cap 4",
+    "field": "当期服役\np_cap 4.1",
+    "title": "当期服役\np_cap 4.1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 27,
+    "width": 135,
+    "nunique": 28,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -3066,11 +3066,11 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 5",
-    "title": "p_cap 5",
+    "field": "当期服役\np_cap 5.1",
+    "title": "当期服役\np_cap 5.1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 16,
+    "width": 135,
+    "nunique": 17,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -3168,11 +3168,11 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 6",
-    "title": "p_cap 6",
+    "field": "当期服役\np_cap 6.1",
+    "title": "当期服役\np_cap 6.1",
     "dtype": "number",
-    "width": 118,
-    "nunique": 6,
+    "width": 135,
+    "nunique": 7,
     "frozen": false,
     "headerFilter": "number",
     "headerFilterParams": {},
@@ -3270,10 +3270,10 @@
     "headerSort": true
   },
   {
-    "field": "p_cap 7",
-    "title": "p_cap 7",
+    "field": "当期服役\np_cap 7.1",
+    "title": "当期服役\np_cap 7.1",
     "dtype": "number",
-    "width": 118,
+    "width": 135,
     "nunique": 3,
     "frozen": false,
     "headerFilter": "number",

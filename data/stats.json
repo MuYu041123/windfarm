@@ -1,9 +1,9 @@
 {
   "total_plants": 1387,
-  "with_repower": 108,
-  "with_expansion": 35,
-  "with_retire": 145,
-  "total_capacity_mw": 151809.6,
+  "with_repower": 105,
+  "with_expansion": 31,
+  "with_retire": 142,
+  "total_capacity_mw": 151663.5,
   "states": [
     "AK",
     "AZ",
@@ -49,8 +49,8 @@
     "WV",
     "WY"
   ],
-  "operating": 1329,
-  "retired": 45,
+  "operating": 1327,
+  "retired": 46,
   "num_states": 43,
-  "total_capacity_gw": 151.81
+  "total_capacity_gw": 151.66
 }
