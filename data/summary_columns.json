@@ -1,6 +1,6 @@
 [
   {
-    "field": "Plant Code",
+    "field": "col_0",
     "title": "Plant Code",
     "dtype": "number",
     "width": 118,
@@ -12,7 +12,7 @@
     "headerSort": true
   },
   {
-    "field": "Plant Name",
+    "field": "col_1",
     "title": "Plant Name",
     "dtype": "string",
     "width": 350,
@@ -24,7 +24,7 @@
     "headerSort": true
   },
   {
-    "field": "State",
+    "field": "col_2",
     "title": "State",
     "dtype": "string",
     "width": 70,
@@ -39,7 +39,7 @@
     "headerSort": true
   },
   {
-    "field": "County",
+    "field": "col_3",
     "title": "County",
     "dtype": "string",
     "width": 177,
@@ -51,7 +51,7 @@
     "headerSort": true
   },
   {
-    "field": "Status",
+    "field": "col_4",
     "title": "Status",
     "dtype": "string",
     "width": 70,
@@ -66,7 +66,7 @@
     "headerSort": true
   },
   {
-    "field": "Nameplate Capacity (MW)",
+    "field": "col_5",
     "title": "Nameplate Capacity (MW)",
     "dtype": "string",
     "width": 211,
@@ -78,7 +78,7 @@
     "headerSort": true
   },
   {
-    "field": "Operating Month",
+    "field": "col_6",
     "title": "Operating Month",
     "dtype": "number",
     "width": 143,
@@ -90,7 +90,7 @@
     "headerSort": true
   },
   {
-    "field": "Operating Year",
+    "field": "col_7",
     "title": "Operating Year",
     "dtype": "number",
     "width": 135,
@@ -102,7 +102,7 @@
     "headerSort": true
   },
   {
-    "field": "has_repower",
+    "field": "col_8",
     "title": "has_repower",
     "dtype": "string",
     "width": 109,
@@ -117,7 +117,7 @@
     "headerSort": true
   },
   {
-    "field": "has_expansion",
+    "field": "col_9",
     "title": "has_expansion",
     "dtype": "string",
     "width": 126,
@@ -132,7 +132,7 @@
     "headerSort": true
   },
   {
-    "field": "has_retire",
+    "field": "col_10",
     "title": "has_retire",
     "dtype": "string",
     "width": 101,
@@ -147,7 +147,7 @@
     "headerSort": true
   },
   {
-    "field": "City",
+    "field": "col_11",
     "title": "City",
     "dtype": "string",
     "width": 186,
@@ -159,7 +159,7 @@
     "headerSort": true
   },
   {
-    "field": "Zip",
+    "field": "col_12",
     "title": "Zip",
     "dtype": "string",
     "width": 70,
@@ -171,7 +171,7 @@
     "headerSort": true
   },
   {
-    "field": "Latitude",
+    "field": "col_13",
     "title": "Latitude",
     "dtype": "number",
     "width": 118,
@@ -183,7 +183,7 @@
     "headerSort": true
   },
   {
-    "field": "Longitude",
+    "field": "col_14",
     "title": "Longitude",
     "dtype": "string",
     "width": 109,
@@ -195,7 +195,7 @@
     "headerSort": true
   },
   {
-    "field": "Balancing Authority Name",
+    "field": "col_15",
     "title": "Balancing Authority Name",
     "dtype": "string",
     "width": 350,
@@ -210,7 +210,7 @@
     "headerSort": true
   },
   {
-    "field": "Utility ID",
+    "field": "col_16",
     "title": "Utility ID",
     "dtype": "number",
     "width": 118,
@@ -222,7 +222,7 @@
     "headerSort": true
   },
   {
-    "field": "Utility Name",
+    "field": "col_17",
     "title": "Utility Name",
     "dtype": "string",
     "width": 350,
@@ -234,7 +234,7 @@
     "headerSort": true
   },
   {
-    "field": "draft_file",
+    "field": "col_18",
     "title": "draft_file",
     "dtype": "string",
     "width": 245,
@@ -249,7 +249,7 @@
     "headerSort": true
   },
   {
-    "field": "draft_sheet",
+    "field": "col_19",
     "title": "draft_sheet",
     "dtype": "number",
     "width": 118,
