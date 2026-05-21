@@ -1,6 +1,6 @@
 [
   {
-    "field": "plant_code",
+    "field": "col_0",
     "title": "plant_code",
     "dtype": "number",
     "width": 118,
@@ -12,7 +12,7 @@
     "headerSort": true
   },
   {
-    "field": "plant_name",
+    "field": "col_1",
     "title": "plant_name",
     "dtype": "string",
     "width": 350,
@@ -24,7 +24,7 @@
     "headerSort": true
   },
   {
-    "field": "state",
+    "field": "col_2",
     "title": "state",
     "dtype": "string",
     "width": 70,
@@ -39,7 +39,7 @@
     "headerSort": true
   },
   {
-    "field": "county",
+    "field": "col_3",
     "title": "county",
     "dtype": "string",
     "width": 177,
@@ -51,7 +51,7 @@
     "headerSort": true
   },
   {
-    "field": "status",
+    "field": "col_4",
     "title": "status",
     "dtype": "string",
     "width": 70,
@@ -66,7 +66,7 @@
     "headerSort": true
   },
   {
-    "field": "technology",
+    "field": "col_5",
     "title": "technology",
     "dtype": "string",
     "width": 194,
@@ -81,7 +81,7 @@
     "headerSort": true
   },
   {
-    "field": "current_nameplate_mw",
+    "field": "col_6",
     "title": "current_nameplate_mw",
     "dtype": "number",
     "width": 186,
@@ -93,7 +93,7 @@
     "headerSort": true
   },
   {
-    "field": "init_operation_date",
+    "field": "col_7",
     "title": "init_operation_date",
     "dtype": "string",
     "width": 177,
@@ -105,7 +105,7 @@
     "headerSort": true
   },
   {
-    "field": "init_capacity_mw",
+    "field": "col_8",
     "title": "init_capacity_mw",
     "dtype": "string",
     "width": 288,
@@ -117,7 +117,7 @@
     "headerSort": true
   },
   {
-    "field": "init_turbine_count",
+    "field": "col_9",
     "title": "init_turbine_count",
     "dtype": "string",
     "width": 169,
@@ -129,7 +129,7 @@
     "headerSort": true
   },
   {
-    "field": "init_model",
+    "field": "col_10",
     "title": "init_model",
     "dtype": "string",
     "width": 350,
@@ -141,7 +141,7 @@
     "headerSort": true
   },
   {
-    "field": "repower_date",
+    "field": "col_11",
     "title": "repower_date",
     "dtype": "string",
     "width": 118,
@@ -156,7 +156,7 @@
     "headerSort": true
   },
   {
-    "field": "repower_capacity_mw",
+    "field": "col_12",
     "title": "repower_capacity_mw",
     "dtype": "number",
     "width": 177,
@@ -168,7 +168,7 @@
     "headerSort": true
   },
   {
-    "field": "repower_model",
+    "field": "col_13",
     "title": "repower_model",
     "dtype": "string",
     "width": 350,
@@ -180,7 +180,7 @@
     "headerSort": true
   },
   {
-    "field": "repower_turbine_count",
+    "field": "col_14",
     "title": "repower_turbine_count",
     "dtype": "number",
     "width": 194,
@@ -192,7 +192,7 @@
     "headerSort": true
   },
   {
-    "field": "expansion_date",
+    "field": "col_15",
     "title": "expansion_date",
     "dtype": "string",
     "width": 350,
@@ -204,7 +204,7 @@
     "headerSort": true
   },
   {
-    "field": "expansion_capacity_mw",
+    "field": "col_16",
     "title": "expansion_capacity_mw",
     "dtype": "string",
     "width": 262,
@@ -216,7 +216,7 @@
     "headerSort": true
   },
   {
-    "field": "expansion_model",
+    "field": "col_17",
     "title": "expansion_model",
     "dtype": "string",
     "width": 350,
@@ -228,7 +228,7 @@
     "headerSort": true
   },
   {
-    "field": "expansion_turbine_count",
+    "field": "col_18",
     "title": "expansion_turbine_count",
     "dtype": "string",
     "width": 211,
@@ -240,7 +240,7 @@
     "headerSort": true
   },
   {
-    "field": "retire_date",
+    "field": "col_19",
     "title": "retire_date",
     "dtype": "string",
     "width": 228,
@@ -252,7 +252,7 @@
     "headerSort": true
   },
   {
-    "field": "retire_capacity_mw",
+    "field": "col_20",
     "title": "retire_capacity_mw",
     "dtype": "string",
     "width": 169,
@@ -264,7 +264,7 @@
     "headerSort": true
   },
   {
-    "field": "retire_model",
+    "field": "col_21",
     "title": "retire_model",
     "dtype": "string",
     "width": 350,
@@ -276,7 +276,7 @@
     "headerSort": true
   },
   {
-    "field": "retire_turbine_count",
+    "field": "col_22",
     "title": "retire_turbine_count",
     "dtype": "string",
     "width": 186,
@@ -288,7 +288,7 @@
     "headerSort": true
   },
   {
-    "field": "source1",
+    "field": "col_23",
     "title": "source1",
     "dtype": "string",
     "width": 350,
@@ -300,7 +300,7 @@
     "headerSort": true
   },
   {
-    "field": "source1_type",
+    "field": "col_24",
     "title": "source1_type",
     "dtype": "string",
     "width": 245,
@@ -315,7 +315,7 @@
     "headerSort": true
   },
   {
-    "field": "source2",
+    "field": "col_25",
     "title": "source2",
     "dtype": "string",
     "width": 350,
@@ -327,7 +327,7 @@
     "headerSort": true
   },
   {
-    "field": "source2_type",
+    "field": "col_26",
     "title": "source2_type",
     "dtype": "string",
     "width": 245,

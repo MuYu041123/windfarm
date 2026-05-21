@@ -84,16 +84,20 @@ async function loadTable(tableName, config) {
         sorter: col.dtype === 'number' ? 'number' : 'string',
       };
 
-      // Configure filter type
-      if (col.headerFilter === 'select') {
+      // Ensure every column has a filter
+      c.headerFilterLiveFilterDelay = 400;
+      if (col.headerFilter === 'select' || (col.nunique && col.nunique <= 50 && col.dtype === 'string')) {
         c.headerFilter = 'select';
         c.headerFilterParams = { values: true, multiselect: true, clearable: true };
       } else if (col.dtype === 'number') {
         c.headerFilter = 'number';
-        c.headerFilterLiveFilterDelay = 400;
       } else {
         c.headerFilter = 'input';
-        c.headerFilterLiveFilterDelay = 400;
+      }
+
+      // Performance: only show first 30 columns by default for wide tables
+      if (columns.length > 50 && i >= 30) {
+        c.visible = false;
       }
 
       // Number formatter
@@ -130,14 +134,23 @@ async function loadTable(tableName, config) {
       height: '100%',
       pagination: true,
       paginationSize: 50,
-      paginationSizeSelector: [25, 50, 100, 250, 500],
+      paginationSizeSelector: [25, 50, 100, 250],
       paginationCounter: 'rows',
       movableColumns: true,
       selectable: false,
-      initialSort: [{ column: columns[0]?.field || tabCols[0]?.field, dir: 'asc' }],
+      initialSort: [{ column: tabCols[0]?.field, dir: 'asc' }],
       renderHorizontal: 'virtual',
+      columnDefaults: {
+        headerSort: true,
+        resizable: true,
+      },
       placeholder: 'No data',
     });
+
+    // Show column count and note about hidden columns
+    const visibleCount = tabCols.filter(c => c.visible !== false).length;
+    document.getElementById(`count-${tableName}`).textContent =
+      `${data.length.toLocaleString('en-US')} rows × ${columns.length} cols (${visibleCount} visible, use column picker to show more)`;
 
     TableManager.tables[tableName] = table;
     loading.style.display = 'none';
