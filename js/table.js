@@ -84,19 +84,19 @@ async function loadTable(tableName, config) {
         sorter: col.dtype === 'number' ? 'number' : 'string',
       };
 
-      // Ensure every column has a filter
+      // Header filter — use column metadata from build script
       c.headerFilterLiveFilterDelay = 400;
-      if (col.headerFilter === 'select' || (col.nunique && col.nunique <= 50 && col.dtype === 'string')) {
+      if (col.headerFilter === 'select') {
         c.headerFilter = 'select';
         c.headerFilterParams = { values: true, multiselect: true, clearable: true };
-      } else if (col.dtype === 'number') {
+      } else if (col.headerFilter === 'number') {
         c.headerFilter = 'number';
       } else {
         c.headerFilter = 'input';
       }
 
-      // Performance: only show first 30 columns by default for wide tables
-      if (columns.length > 50 && i >= 30) {
+      // Performance: for AW (wide table), initially show first 20 cols
+      if (tableName === 'allwindplant' && i >= 20) {
         c.visible = false;
       }
 
@@ -140,9 +140,11 @@ async function loadTable(tableName, config) {
       selectable: false,
       initialSort: [{ column: tabCols[0]?.field, dir: 'asc' }],
       renderHorizontal: 'virtual',
+      headerVisible: true,
       columnDefaults: {
         headerSort: true,
         resizable: true,
+        headerMenu: true,
       },
       placeholder: 'No data',
     });

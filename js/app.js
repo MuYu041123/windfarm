@@ -123,7 +123,7 @@ function initFilterChips() {
 function updateFilterCounts() {
   let op = 0, rp = 0, ex = 0, hr = 0, rt = 0;
   AppState.plants.forEach(p => {
-    if (p.status === 'OP' && !p.has_repower && !p.has_expansion && !p.has_retire) op++;
+    if (p.status === 'OP') op++;
     if (p.has_repower) rp++;
     if (p.has_expansion) ex++;
     if (p.has_retire && p.status === 'OP') hr++;
@@ -148,13 +148,13 @@ function applyFilters() {
 
   AppState.filteredPlants = AppState.plants.filter(p => {
     // OR logic: plant passes if it matches ANY selected chip
-    const isPlainOp = p.status === 'OP' && !p.has_repower && !p.has_expansion && !p.has_retire;
+    const isOperating = p.status === 'OP';
     const isRepowered = p.has_repower;
     const isExpanded = p.has_expansion;
     const isPartialRetire = p.has_retire && p.status === 'OP';
     const isRetired = p.status === 'RE' || p.status === 'OA';
 
-    if (operating && isPlainOp) return true;
+    if (operating && isOperating) return true;
     if (repower && isRepowered) return true;
     if (expansion && isExpanded) return true;
     if (has_retire && isPartialRetire) return true;
