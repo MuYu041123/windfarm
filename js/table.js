@@ -56,11 +56,17 @@ async function switchTable(tableName) {
     TableManager.loaded[tableName] = true;
   }
 
-  // Rebuild column selector for current table from stored columns
-  const table = TableManager.tables[tableName];
-  const cols = TableManager.columns[tableName];
-  if (table && cols) {
-    buildColumnSelector(tableName, cols, table);
+  // Show Columns button only for AllWindPlant
+  const btn = document.getElementById('col-selector-btn');
+  const dd = document.getElementById('col-selector-dropdown');
+  if (tableName === 'allwindplant') {
+    btn.style.display = 'inline-block';
+    const table = TableManager.tables[tableName];
+    const cols = TableManager.columns[tableName];
+    if (table && cols) buildColumnSelector(tableName, cols, table);
+  } else {
+    btn.style.display = 'none';
+    dd.style.display = 'none';
   }
 }
 
@@ -185,6 +191,23 @@ function buildColumnSelector(tableName, columns, table) {
   btn.style.display = 'inline-block';
   btn.onclick = (e) => {
     e.stopPropagation();
+    // Rebuild dropdown from current column visibility state each time it opens
+    const currentCols = table.getColumns();
+    const html = columns.map((col, i) => {
+      const colComp = currentCols.find(c => c.getField() === col.field);
+      const isVisible = colComp ? colComp.isVisible() : (col.visible !== false);
+      const checked = isVisible ? 'checked' : '';
+      return `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;cursor:pointer;white-space:nowrap;">
+        <input type="checkbox" class="col-cb" ${checked} onchange="window.toggleColumn('${tableName}','${col.field}', this.checked)">
+        <span>${col.title.substring(0, 60)}</span>
+      </label>`;
+    }).join('');
+    const selectAll = `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;font-weight:700;border-bottom:1px solid #eee;margin-bottom:4px;cursor:pointer;">
+      <input type="checkbox" checked onchange="var cbs=document.querySelectorAll('#col-selector-dropdown input.col-cb');for(var i=0;i<cbs.length;i++){cbs[i].checked=this.checked;window.toggleColumn('${tableName}',cbs[i].getAttribute('data-field'),this.checked)}">
+      <span>Select All / None</span>
+    </label>`;
+    dropdown.innerHTML = selectAll + html;
+
     const rect = btn.getBoundingClientRect();
     dropdown.style.position = 'fixed';
     dropdown.style.top = (rect.bottom + 4) + 'px';
@@ -194,30 +217,15 @@ function buildColumnSelector(tableName, columns, table) {
 
   document.addEventListener('click', () => { dropdown.style.display = 'none'; });
   dropdown.addEventListener('click', (e) => { e.stopPropagation(); });
-
-  const html = columns.map((col, i) => {
-    const checked = col.visible !== false ? 'checked' : '';
-    return `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;cursor:pointer;white-space:nowrap;">
-      <input type="checkbox" class="col-cb" data-col="${col.field}" ${checked} onchange="window.toggleColumn('${tableName}', ${i}, this.checked)">
-      <span>${col.title.substring(0, 60)}</span>
-    </label>`;
-  }).join('');
-
-  const selectAll = `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;font-weight:700;border-bottom:1px solid #eee;margin-bottom:4px;cursor:pointer;">
-    <input type="checkbox" checked onchange="var cbs=document.querySelectorAll('#col-selector-dropdown input.col-cb');for(var i=0;i<cbs.length;i++){cbs[i].checked=this.checked;window.toggleColumn('${tableName}',i,this.checked)}">
-    <span>Select All / None</span>
-  </label>`;
-
-  dropdown.innerHTML = selectAll + html;
 }
 
-window.toggleColumn = function(tableName, colIdx, show) {
+window.toggleColumn = function(tableName, field, show) {
   const table = TableManager.tables[tableName];
   if (table) {
     if (show) {
-      table.showColumn(table.getColumns()[colIdx].getField());
+      table.showColumn(field);
     } else {
-      table.hideColumn(table.getColumns()[colIdx].getField());
+      table.hideColumn(field);
     }
   }
 };
