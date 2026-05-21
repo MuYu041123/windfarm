@@ -7,6 +7,7 @@
 const TableManager = {
   tables: {},       // {tablename: Tabulator instance}
   loaded: {},       // {tablename: bool}
+  columns: {},      // {tablename: column definitions}
   currentTable: 'summary',
 };
 
@@ -53,6 +54,13 @@ async function switchTable(tableName) {
   if (!TableManager.loaded[tableName]) {
     await loadTable(tableName, config);
     TableManager.loaded[tableName] = true;
+  }
+
+  // Rebuild column selector for current table from stored columns
+  const table = TableManager.tables[tableName];
+  const cols = TableManager.columns[tableName];
+  if (table && cols) {
+    buildColumnSelector(tableName, cols, table);
   }
 }
 
@@ -147,6 +155,7 @@ async function loadTable(tableName, config) {
       `${data.length.toLocaleString('en-US')} rows × ${columns.length} cols (${visibleCount} visible, use column picker to show more)`;
 
     TableManager.tables[tableName] = table;
+    TableManager.columns[tableName] = tabCols;
     loading.style.display = 'none';
 
     // Build column selector dropdown
