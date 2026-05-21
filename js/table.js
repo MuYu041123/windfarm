@@ -193,7 +193,7 @@ function buildColumnSelector() {
       const isVisible = colComp ? colComp.isVisible() : (col.visible !== false);
       const checked = isVisible ? 'checked' : '';
       return `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;cursor:pointer;white-space:nowrap;">
-        <input type="checkbox" class="col-cb" ${checked} onchange="window.toggleColumn('${tableName}','${col.field}', this.checked)">
+        <input type="checkbox" class="col-cb" data-field="${col.field}" ${checked} onchange="window.toggleColumn('${tableName}',this.getAttribute('data-field'),this.checked)">
         <span>${col.title.substring(0, 60)}</span>
       </label>`;
     }).join('');
