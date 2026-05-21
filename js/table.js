@@ -56,18 +56,6 @@ async function switchTable(tableName) {
     TableManager.loaded[tableName] = true;
   }
 
-  // Show Columns button only for AllWindPlant
-  const btn = document.getElementById('col-selector-btn');
-  const dd = document.getElementById('col-selector-dropdown');
-  if (tableName === 'allwindplant') {
-    btn.style.display = 'inline-block';
-    const table = TableManager.tables[tableName];
-    const cols = TableManager.columns[tableName];
-    if (table && cols) buildColumnSelector(tableName, cols, table);
-  } else {
-    btn.style.display = 'none';
-    dd.style.display = 'none';
-  }
 }
 
 async function loadTable(tableName, config) {
@@ -164,8 +152,10 @@ async function loadTable(tableName, config) {
     TableManager.columns[tableName] = tabCols;
     loading.style.display = 'none';
 
-    // Build column selector dropdown
-    buildColumnSelector(tableName, tabCols, table);
+    // Build column selector dropdown (first time)
+    if (!document.getElementById('col-selector-btn').onclick) {
+      buildColumnSelector();
+    }
 
     // Show row count
     document.getElementById(`count-${tableName}`).textContent = `${data.length.toLocaleString('en-US')} rows`;
@@ -184,16 +174,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function buildColumnSelector(tableName, columns, table) {
+function buildColumnSelector() {
   const btn = document.getElementById('col-selector-btn');
   const dropdown = document.getElementById('col-selector-dropdown');
-
   btn.style.display = 'inline-block';
+
   btn.onclick = (e) => {
     e.stopPropagation();
-    // Rebuild dropdown from current column visibility state each time it opens
+    // Dynamically determine which table is currently active
+    const tableName = TableManager.currentTable;
+    const table = TableManager.tables[tableName];
+    const columns = TableManager.columns[tableName];
+    if (!table || !columns) return;
+
     const currentCols = table.getColumns();
-    const html = columns.map((col, i) => {
+    const html = columns.map((col) => {
       const colComp = currentCols.find(c => c.getField() === col.field);
       const isVisible = colComp ? colComp.isVisible() : (col.visible !== false);
       const checked = isVisible ? 'checked' : '';
