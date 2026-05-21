@@ -97,9 +97,11 @@ function initTabs() {
         initTableTabs();
         AppState.awDataLoaded = true;
       }
-      // Show/hide column selector button
-      document.getElementById('col-selector-btn').style.display = tab === 'table' ? 'inline-block' : 'none';
-      document.getElementById('col-selector-dropdown').style.display = 'none';
+      // When leaving table tab, hide column selector
+      if (tab !== 'table') {
+        document.getElementById('col-selector-btn').style.display = 'none';
+        document.getElementById('col-selector-dropdown').style.display = 'none';
+      }
 
       // Invalidate map size
       if (tab === 'map') {
