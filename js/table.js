@@ -84,20 +84,12 @@ async function loadTable(tableName, config) {
         sorter: col.dtype === 'number' ? 'number' : 'string',
       };
 
-      // Header filter — use column metadata from build script
+      // Header filter — white input box on every column
       c.headerFilterLiveFilterDelay = 400;
-      if (col.headerFilter === 'select') {
-        c.headerFilter = 'select';
-        c.headerFilterParams = { values: true, multiselect: true, clearable: true };
-      } else if (col.headerFilter === 'number') {
+      if (col.headerFilter === 'number') {
         c.headerFilter = 'number';
       } else {
         c.headerFilter = 'input';
-      }
-
-      // Performance: for AW (wide table), initially show first 20 cols
-      if (tableName === 'allwindplant' && i >= 20) {
-        c.visible = false;
       }
 
       // Number formatter
@@ -157,6 +149,9 @@ async function loadTable(tableName, config) {
     TableManager.tables[tableName] = table;
     loading.style.display = 'none';
 
+    // Build column selector dropdown
+    buildColumnSelector(tableName, tabCols, table);
+
     // Show row count
     document.getElementById(`count-${tableName}`).textContent = `${data.length.toLocaleString('en-US')} rows`;
   } catch (err) {
@@ -174,7 +169,48 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+function buildColumnSelector(tableName, columns, table) {
+  const btn = document.getElementById('col-selector-btn');
+  const dropdown = document.getElementById('col-selector-dropdown');
+
+  btn.style.display = 'inline-block';
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+  };
+
+  document.addEventListener('click', () => { dropdown.style.display = 'none'; });
+  dropdown.addEventListener('click', (e) => { e.stopPropagation(); });
+
+  const html = columns.map((col, i) => {
+    const checked = col.visible !== false ? 'checked' : '';
+    return `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;cursor:pointer;white-space:nowrap;">
+      <input type="checkbox" class="col-cb" data-col="${col.field}" ${checked} onchange="window.toggleColumn('${tableName}', ${i}, this.checked)">
+      <span>${col.title.substring(0, 60)}</span>
+    </label>`;
+  }).join('');
+
+  const selectAll = `<label style="display:flex;align-items:center;gap:6px;padding:3px 4px;font-size:12px;font-weight:700;border-bottom:1px solid #eee;margin-bottom:4px;cursor:pointer;">
+    <input type="checkbox" checked onchange="var cbs=document.querySelectorAll('#col-selector-dropdown input.col-cb');for(var i=0;i<cbs.length;i++){cbs[i].checked=this.checked;window.toggleColumn('${tableName}',i,this.checked)}">
+    <span>Select All / None</span>
+  </label>`;
+
+  dropdown.innerHTML = selectAll + html;
+}
+
+window.toggleColumn = function(tableName, colIdx, show) {
+  const table = TableManager.tables[tableName];
+  if (table) {
+    if (show) {
+      table.showColumn(table.getColumns()[colIdx].getField());
+    } else {
+      table.hideColumn(table.getColumns()[colIdx].getField());
+    }
+  }
+};
+
 // Expose
 window.TableManager = TableManager;
 window.switchTable = switchTable;
 window.initTableTabs = initTableTabs;
+window.buildColumnSelector = buildColumnSelector;
