@@ -385,6 +385,8 @@ body {
   padding: 8px 8px 0 8px;
   gap: 2px;
   background: var(--color-bg);
+  position: relative;
+  align-items: center;
 }
 
 .sub-tab-btn {

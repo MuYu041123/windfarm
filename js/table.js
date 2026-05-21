@@ -176,6 +176,10 @@ function buildColumnSelector(tableName, columns, table) {
   btn.style.display = 'inline-block';
   btn.onclick = (e) => {
     e.stopPropagation();
+    const rect = btn.getBoundingClientRect();
+    dropdown.style.position = 'fixed';
+    dropdown.style.top = (rect.bottom + 4) + 'px';
+    dropdown.style.right = (window.innerWidth - rect.right) + 'px';
     dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
   };
 
